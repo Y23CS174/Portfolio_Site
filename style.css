@@ -55,8 +55,8 @@ body {
 header.hero {
   background: linear-gradient(to right, #4facfe, #00f2fe);
   color: white;
-  text-align: center;
-  padding: 120px 20px 100px;
+  text-align: center; /* changed from center to align text with image */
+  padding: 20px 10px; /* reduced vertical padding */
   position: relative;
   overflow: hidden;
 }
@@ -373,4 +373,12 @@ footer {
 #contact button[type="submit"]:hover {
   transform: scale(1.05);
   background: linear-gradient(90deg, #0056b3, #003d80);
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
